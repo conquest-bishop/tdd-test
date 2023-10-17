@@ -16,8 +16,18 @@ const assert = chai.assert;
 // decribed the factorial of 0 and its result
 describe('factorial function', function() {
   it('return 1 when n = 0', function() {
-    const result = factorial(0);
+    let  result = factorial(0);
     assert.equal(result, 1);
+  });
+// tested factorial with 4
+  it('should calculate the factorial of 5', function() {
+    let result = factorial(4);
+    assert.equal(result, 24);
+  });
+// tested factorial with 5
+  it('should calculate the factorial of 5', function() {
+    let result = factorial(5);
+    assert.equal(result, 120);
   });
 
 })
