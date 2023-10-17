@@ -9,6 +9,19 @@ function factorial(n){
     }
 }
 
+const chai = require('chai');
+const assert = chai.assert;
+
+
+// decribed the factorial of 0 and its result
+describe('factorial function', function() {
+  it('return 1 when n = 0', function() {
+    const result = factorial(0);
+    assert.equal(result, 1);
+  });
+
+})
+
 
 
 
